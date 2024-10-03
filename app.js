@@ -16,6 +16,7 @@ function getValues() {
 
     const calculatedTip = (parseInt(percentageTipValues)/100) * parseInt(billAmountValues);
     const total = parseInt(billAmountValues) + calculatedTip;
+    calculatorButton.style.backgroundColor = "#f08080";
 
     tipAmount.value = calculatedTip;
     totalAmount.value = total;
