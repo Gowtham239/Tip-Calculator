@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <img
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/tip-calculator-img.png"
+      alt=""
+    />
+    <div class="calculator-container">
+      <h1>Tip Calculator</h1>
+      <div class="tip-calculator-container">
+        <div class="rigth-container">
+          <p>BILL AMOUNT</p>
+          <input type="text" id="billAmount" />
+          <p>PERCENTAGE TIP</p>
+          <input type="text" id="percentageTip" />
+        </div>
+        <div class="left-container">
+          <p>TIP AMOUNT</p>
+          <input type="text" id="tipAmount" />
+          <p>TOTAL</p>
+          <input type="text" id="totalAmount" />
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="calculate-button">CALCULATE</button>
+        <p class="error-message"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
