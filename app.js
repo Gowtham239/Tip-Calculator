@@ -7,19 +7,19 @@ const message = document.querySelector(".error-message");
 const calculatorButton = document.querySelector("#calculate-button");
 
 function getValues() {
-  const billAmountValues = billAmount.value;
-  const percentageTipValues = percentageTip.value;
+  const billAmountValues = parseInt(billAmount.value);
+  const percentageTipValues = parseInt(percentageTip.value);
   if(billAmountValues === "" || percentageTipValues === "") {
     message.textContent = "* Please enter a valid input";
   } else {
     message.textContent = "";
 
-    const calculatedTip = (parseInt(percentageTipValues)/100) * parseInt(billAmountValues);
-    const total = parseInt(billAmountValues) + calculatedTip;
+    const calculatedTip = (percentageTipValues)/100 * billAmountValues;
+    const total = billAmountValues + calculatedTip;
     calculatorButton.style.backgroundColor = "#f08080";
 
-    tipAmount.value = calculatedTip;
-    totalAmount.value = total;
+    tipAmount.textContent = calculatedTip;
+    totalAmount.textContent = total;
   }
 }
 
