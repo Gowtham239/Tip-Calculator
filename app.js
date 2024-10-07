@@ -9,7 +9,7 @@ const calculatorButton = document.querySelector("#calculate-button");
 function getValues() {
   const billAmountValues = parseInt(billAmount.value);
   const percentageTipValues = parseInt(percentageTip.value);
-  if(billAmountValues === "" || percentageTipValues === "") {
+  if(isNaN(billAmountValues) || isNaN(percentageTipValues)) {
     message.textContent = "* Please enter a valid input";
   } else {
     message.textContent = "";
