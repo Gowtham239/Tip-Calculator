@@ -55,7 +55,7 @@ p {
 }
 
 .rigth-container input:first-of-type, 
-.left-container input:first-of-type{
+.left-container div:first-of-type{
     margin-bottom: 15px;
 }
 
